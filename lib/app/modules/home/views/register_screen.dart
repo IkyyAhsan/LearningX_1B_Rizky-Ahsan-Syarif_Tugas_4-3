@@ -77,6 +77,21 @@ class RegisterScreen extends StatelessWidget {
                         ),
                     ),
                     const SizedBox(height: 12,),
+
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text('Sudah punya akun?', style: Theme.of(context).textTheme.labelMedium),
+                        TextButton(
+                          onPressed: () {
+                            Navigator.pushReplacementNamed(context,'/login');
+                          },
+                          child: const Text('Masuk', style: TextStyle(color: Colors.blue)),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 12,),
+                    
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
